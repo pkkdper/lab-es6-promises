@@ -126,7 +126,15 @@ obtainInstruction("steak", 0)
 })
 
 // Iteration 3 using async/await
-// ...
+async function instructions() {
+  await obtainInstruction(1);
+  await obtainInstruction(2);
+  await obtainInstruction(3);
+  await obtainInstruction(0);
+  console.log("You arrived at your destination!");
+}
+ 
+instructions();
 
 // Bonus 2 - Promise all
 // ...
